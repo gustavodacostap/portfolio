@@ -41,6 +41,8 @@ npm install
 npm run dev
 Acesse / Open http://localhost:3000 no navegador.
 
+```
+
 ---
 
 ## 🧠 Sobre Mim / About Me
@@ -56,5 +58,3 @@ Email: [gustavopaulyno2012@gmail.com](mailto:gustavopaulyno2012@gmail.com)
 LinkedIn: [https://www.linkedin.com/in/perfil-gustavo-da-costa/](https://www.linkedin.com/in/perfil-gustavo-da-costa/)
 
 Whatsapp: [https://w.app/zkxjyu](https://w.app/zkxjyu)
-
-```
