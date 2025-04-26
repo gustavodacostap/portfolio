@@ -1,11 +1,11 @@
-export function MenuButton() {
+export default function MenuButton() {
   return (
-    <button className="px-3 py-1 rsounded-md hover:bg-gray-200 dark:hover:bg-gray-800">
+    <button className="rsounded-md text-bluishBlack hover:bg-gray-200 dark:hover:bg-gray-700 dark:text-whitesmoke">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         fill="currentColor"
-        className="size-6"
+        className="size-12"
       >
         <path
           fillRule="evenodd"

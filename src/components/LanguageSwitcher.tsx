@@ -17,7 +17,7 @@ export default function LanguageSwitcher() {
     <Link
       href={newPath}
       locale={newLocale}
-      className="px-3 py-1 rounded border text-sm font-medium"
+      className="text-base md:text-lg font-semibold text-bluishBlack dark:text-whitesmoke"
     >
       {newLocale.toUpperCase()}
     </Link>
