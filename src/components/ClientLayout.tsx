@@ -3,7 +3,7 @@
 
 import { useState } from "react";
 import Header from "./Header";
-import FullScreenMenu from "./FullScreenMenu";
+import Menu from "./Menu";
 
 interface Props {
   children: React.ReactNode;
@@ -14,18 +14,10 @@ export default function ClientLayout({ children }: Props) {
 
   return (
     <>
-      <Header
-        showLanguageSwitcher
-        showThemeToggle
-        menuOpen={menuOpen}
-        setMenuOpen={() => setMenuOpen(true)}
-      />
+      <Header menuOpen={menuOpen} setMenuOpen={() => setMenuOpen(true)} />
       {/* Se menuOpen for true, mostra o FullScreenMenu */}
       {menuOpen && (
-        <FullScreenMenu
-          menuOpen={menuOpen}
-          setMenuOpen={() => setMenuOpen(false)}
-        />
+        <Menu menuOpen={menuOpen} setMenuOpen={() => setMenuOpen(false)} />
       )}
       {children}
     </>

@@ -9,16 +9,9 @@ import MenuToggleButton from "./MenuToggleButton";
 interface Props {
   menuOpen: boolean;
   setMenuOpen: (open: boolean) => void;
-  showLanguageSwitcher?: boolean;
-  showThemeToggle?: boolean;
 }
 
-export default function Header({
-  showLanguageSwitcher,
-  showThemeToggle,
-  menuOpen,
-  setMenuOpen,
-}: Props) {
+export default function Header({ menuOpen, setMenuOpen }: Props) {
   return (
     <header className="w-full bg-whitesmoke dark:bg-bluishBlack">
       <nav className="flex items-center justify-between">
@@ -31,8 +24,8 @@ export default function Header({
           />
         </Link>
         <ul className="flex items-center gap-5">
-          {showLanguageSwitcher && <LanguageSwitcher />}
-          {showThemeToggle && <ThemeToggle />}
+          <LanguageSwitcher />
+          <ThemeToggle />
           <MenuToggleButton
             isOpen={menuOpen}
             onClick={() => setMenuOpen(!menuOpen)}

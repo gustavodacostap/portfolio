@@ -1,8 +1,19 @@
 {
   "home": {
     "title": "Home | Portfolio",
-    "h1": "Turning ideas into <code>",
+    "h1": "Turning ideas into <code>code</code>",
     "subHeadline": "Hi, I'm Gustavo — a full stack web developer in training, creating solutions with code, dreams, and purpose.",
     "seeProjects": "See Projects"
+  },
+  "menu": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "about": {
+    "h2": "About",
+    "p": "Web developer in training, passionate about creating digital solutions with purpose and creativity. I study ADS and am specializing in technologies such as HTML, CSS, JavaScript, TypeScript, Bootstrap, Sass, React, Next.js, Node.js, MongoDB, and Sequelize. I dream of living abroad and am building my path with practical projects, constant learning, and a lot of dedication.",
+    "button": "My Resume"
   }
 }

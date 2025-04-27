@@ -1,8 +1,19 @@
 {
   "home": {
     "title": "Início | Portfólio",
-    "h1": "Transformando ideias em {{code}}",
+    "h1": "Transformando ideias em <code>código</code>",
     "subHeadline": "Oi, eu sou o Gustavo — desenvolvedor web full stack em formação, criador de soluções com código, sonhos e propósito.",
     "seeProjects": "Ver Projetos"
+  },
+  "menu": {
+    "home": "Início",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "about": {
+    "h2": "Sobre",
+    "p": "Desenvolvedor web em formação apaixonado por criar soluções digitais com propósito e criatividade. Estudo ADS e venho me especializando em tecnologias como HTML, CSS, JavaScript, TypeScript, Bootstrap, Saas, React, Next.js, Node.js, MongoDB e Sequelize. Tenho o sonho de morar fora do Brasil e estou construindo meu caminho com projetos práticos, aprendizado constante e muita dedicação.",
+    "button": "Meu currículo"
   }
 }

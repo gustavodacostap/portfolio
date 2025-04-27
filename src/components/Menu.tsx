@@ -1,25 +1,23 @@
 import Link from "next/link";
 import Header from "./Header";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 interface Props {
   menuOpen: boolean;
   setMenuOpen: (open: boolean) => void;
 }
 
-export default function FullScreenMenu({ menuOpen, setMenuOpen }: Props) {
+export default function Menu({ menuOpen, setMenuOpen }: Props) {
+  const t = useTranslations("menu");
+
   return (
     <div className="fixed inset-0 z-50 bg-whitesmoke dark:bg-bluishBlack flex flex-col sm:p-6 md:p-12 lg:p-18 xl:p-20">
       {/* Header adaptado */}
-      <Header
-        showLanguageSwitcher
-        showThemeToggle
-        menuOpen={menuOpen}
-        setMenuOpen={() => setMenuOpen(false)}
-      />
+      <Header menuOpen={menuOpen} setMenuOpen={() => setMenuOpen(false)} />
 
       {/* Container relativo para controlar os filhos absolutos */}
-      <div className="flex flex-1 items-center gap-10">
+      <div className="flex flex-1 items-center gap-15">
         {/* Imagem como fundo */}
         <Image
           src="/assets/images/leaf.svg"
@@ -35,16 +33,16 @@ export default function FullScreenMenu({ menuOpen, setMenuOpen }: Props) {
           <nav className="text-7xl/21 font-semibold text-bluishBlack dark:text-whitesmoke">
             <ol className="flex flex-col list-decimal marker:text-xl">
               <Link href="/" onClick={() => setMenuOpen(false)}>
-                <li>Home</li>
+                <li>{t("home")}</li>
               </Link>
               <Link href="/about" onClick={() => setMenuOpen(false)}>
-                <li>Sobre</li>
+                <li>{t("about")}</li>
               </Link>
               <Link href="/projects" onClick={() => setMenuOpen(false)}>
-                <li>Projetos</li>
+                <li>{t("projects")}</li>
               </Link>
               <Link href="/contact" onClick={() => setMenuOpen(false)}>
-                <li>Contato</li>
+                <li>{t("contact")}</li>
               </Link>
             </ol>
           </nav>
@@ -58,7 +56,7 @@ export default function FullScreenMenu({ menuOpen, setMenuOpen }: Props) {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
-                  fill="currentColor"
+                  fill="darkOrange"
                   className="size-4"
                 >
                   <path
@@ -79,7 +77,7 @@ export default function FullScreenMenu({ menuOpen, setMenuOpen }: Props) {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
-                  fill="currentColor"
+                  fill="darkOrange"
                   className="size-4"
                 >
                   <path

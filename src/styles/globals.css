@@ -19,6 +19,18 @@
 
 @layer base {
   p {
-    @apply text-base font-inter;
+    @apply text-base md:text-lg font-inter;
+  }
+
+  h2 {
+    @apply text-5xl font-medium;
+  }
+
+  .brackets {
+    @apply text-5xl text-dodgerblue font-medium;
+  }
+
+  .btn-primary {
+    @apply bg-dodgerblue px-4 py-1.5 mt-9 rounded-lg text-whitesmoke text-lg font-medium;
   }
 }
