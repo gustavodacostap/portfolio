@@ -1,6 +1,8 @@
 {
   "home": {
     "title": "Home | Portfolio",
-    "description": "Initial page of my portfolio"
+    "h1": "Turning ideas into <code>",
+    "subHeadline": "Hi, I'm Gustavo — a full stack web developer in training, creating solutions with code, dreams, and purpose.",
+    "seeProjects": "See Projects"
   }
 }

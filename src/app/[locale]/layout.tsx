@@ -4,7 +4,7 @@ import { routing } from "@/i18n/routing";
 import "@/styles/globals.css";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import React from "react";
-import Header from "@/components/Header";
+import ClientLayout from "@/components/ClientLayout";
 
 // Tipagem das props
 type Props = {
@@ -31,8 +31,9 @@ export default async function LocaleLayout({ children, params }: Props) {
         <ThemeProvider>
           {/* Provedor de internacionalização que disponibiliza traduções para toda a aplicação */}
           <NextIntlClientProvider>
-            <Header />
-            {children} {/* Conteúdo da página atual */}
+            <ClientLayout>
+              {children} {/* Conteúdo da página atual */}
+            </ClientLayout>
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

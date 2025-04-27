@@ -1,6 +1,8 @@
 {
   "home": {
     "title": "Início | Portfólio",
-    "description": "Página inicial do meu portfólio"
+    "h1": "Transformando ideias em {{code}}",
+    "subHeadline": "Oi, eu sou o Gustavo — desenvolvedor web full stack em formação, criador de soluções com código, sonhos e propósito.",
+    "seeProjects": "Ver Projetos"
   }
 }
