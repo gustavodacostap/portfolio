@@ -1,5 +1,5 @@
 "use client";
-import { useTheme } from "@/contexts/ThemeContext"; // novo caminho
+import { useTheme } from "@/contexts/ThemeContext";
 import Image from "next/image";
 
 export default function CartoonImage() {
@@ -8,6 +8,7 @@ export default function CartoonImage() {
   return (
     <Image
       src={
+        // Exibe a imagem de acordo com o tema
         theme === "dark"
           ? "/assets/images/cartoon-tema-escuro.png"
           : "/assets/images/cartoon-tema-claro.png"
@@ -15,7 +16,7 @@ export default function CartoonImage() {
       alt="Logo"
       width={470}
       height={0}
-      className="h-auto absolute bottom-0 right-10 md:right-20 lg:right-40"
+      className="h-auto xl:absolute xl:bottom-0 lg:right-40"
       priority
     />
   );

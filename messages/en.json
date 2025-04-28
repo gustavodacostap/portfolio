@@ -1,4 +1,7 @@
 {
+  "metadata": {
+    "title": "Portfolio | Gustavo da Costa"
+  },
   "home": {
     "title": "Home | Portfolio",
     "h1": "Turning ideas into <code>code</code>",
@@ -15,5 +18,13 @@
     "h2": "About",
     "p": "Web developer in training, passionate about creating digital solutions with purpose and creativity. I study ADS and am specializing in technologies such as HTML, CSS, JavaScript, TypeScript, Bootstrap, Sass, React, Next.js, Node.js, MongoDB, and Sequelize. I dream of living abroad and am building my path with practical projects, constant learning, and a lot of dedication.",
     "button": "My Resume"
+  },
+  "projects": {
+    "h2": "Projects"
+  },
+  "contact": {
+    "h2": "Contact",
+    "email": "Email",
+    "social": "Social Media"
   }
 }

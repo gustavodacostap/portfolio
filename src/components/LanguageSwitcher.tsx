@@ -10,7 +10,7 @@ export default function LanguageSwitcher() {
 
   const newLocale = locale === "pt" ? "en" : "pt";
 
-  // Substitui o locale atual na URL pelo novo
+  // Substitui o idioma atual da página na URL pelo outro idioma
   const newPath = pathname.replace(`/${locale}`, `/${newLocale}`);
 
   return (

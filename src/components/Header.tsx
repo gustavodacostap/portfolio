@@ -15,6 +15,7 @@ export default function Header({ menuOpen, setMenuOpen }: Props) {
   return (
     <header className="w-full bg-whitesmoke dark:bg-bluishBlack">
       <nav className="flex items-center justify-between">
+        {/* Logo que tem o link para a Home */}
         <Link href="/">
           <Image
             src="/assets/images/logo-g.dev.svg"
@@ -23,6 +24,8 @@ export default function Header({ menuOpen, setMenuOpen }: Props) {
             height={50}
           />
         </Link>
+
+        {/* Botões de mudar idioma, mudar tema e abrir menu */}
         <ul className="flex items-center gap-5">
           <LanguageSwitcher />
           <ThemeToggle />

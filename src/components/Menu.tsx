@@ -12,25 +12,23 @@ export default function Menu({ menuOpen, setMenuOpen }: Props) {
   const t = useTranslations("menu");
 
   return (
+    // Div abrindo sobre a página inteira
     <div className="fixed inset-0 z-50 bg-whitesmoke dark:bg-bluishBlack flex flex-col sm:p-6 md:p-12 lg:p-18 xl:p-20">
-      {/* Header adaptado */}
       <Header menuOpen={menuOpen} setMenuOpen={() => setMenuOpen(false)} />
 
-      {/* Container relativo para controlar os filhos absolutos */}
       <div className="flex flex-1 items-center gap-15">
-        {/* Imagem como fundo */}
         <Image
           src="/assets/images/leaf.svg"
           alt="Leaf image"
           width={400}
           height={400}
-          className="opacity-70 h-auto left-30" // cover para preencher sem distorcer, opacity para deixar transparente
+          className="opacity-70 h-auto left-30"
           priority
         />
 
-        {/* Links acima da imagem */}
         <div className="flex flex-col gap-5">
           <nav className="text-7xl/21 font-semibold text-bluishBlack dark:text-whitesmoke">
+            {/* Link para cada seção */}
             <ol className="flex flex-col list-decimal marker:text-xl">
               <Link href="/" onClick={() => setMenuOpen(false)}>
                 <li>{t("home")}</li>
@@ -46,6 +44,8 @@ export default function Menu({ menuOpen, setMenuOpen }: Props) {
               </Link>
             </ol>
           </nav>
+
+          {/* Link das redes sociais, com o ícone de setinha */}
           <ul className="flex gap-5 font-inter text-lg [&>a>li]:flex [&>a>li]:items-center [&>a>li]:gap-2">
             <a
               href="https://github.com/gustavodacostap"
@@ -65,7 +65,7 @@ export default function Menu({ menuOpen, setMenuOpen }: Props) {
                     clipRule="evenodd"
                   />
                 </svg>
-                Github
+                github
               </li>
             </a>
             <a
@@ -86,7 +86,7 @@ export default function Menu({ menuOpen, setMenuOpen }: Props) {
                     clipRule="evenodd"
                   />
                 </svg>
-                LinkedIn
+                linkedIn
               </li>
             </a>
           </ul>

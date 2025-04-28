@@ -10,6 +10,7 @@ export default function ThemeToggle() {
       onClick={toggleTheme}
       className="rsounded-md text-bluishBlack hover:bg-gray-200 dark:hover:bg-gray-700 dark:text-whitesmoke"
     >
+      {/* Muda o ícone de acordo com o tema, de sol para lua */}
       {theme === "dark" ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"

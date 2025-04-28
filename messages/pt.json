@@ -1,4 +1,7 @@
 {
+  "metadata": {
+    "title": "Portfólio | Gustavo da Costa"
+  },
   "home": {
     "title": "Início | Portfólio",
     "h1": "Transformando ideias em <code>código</code>",
@@ -15,5 +18,13 @@
     "h2": "Sobre",
     "p": "Desenvolvedor web em formação apaixonado por criar soluções digitais com propósito e criatividade. Estudo ADS e venho me especializando em tecnologias como HTML, CSS, JavaScript, TypeScript, Bootstrap, Saas, React, Next.js, Node.js, MongoDB e Sequelize. Tenho o sonho de morar fora do Brasil e estou construindo meu caminho com projetos práticos, aprendizado constante e muita dedicação.",
     "button": "Meu currículo"
+  },
+  "projects": {
+    "h2": "Projetos"
+  },
+  "contact": {
+    "h2": "Contato",
+    "email": "E-mail",
+    "social": "Redes Sociais"
   }
 }

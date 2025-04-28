@@ -5,14 +5,28 @@ import "@/styles/globals.css";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import React from "react";
 import ClientLayout from "@/components/ClientLayout";
+import { getMessages } from "next-intl/server";
 
-// Tipagem das props
+type metadataProps = {
+  params: { locale: string };
+};
+
+// Obtém o título da página no idioma atual
+export async function generateMetadata({ params }: metadataProps) {
+  const { locale } = await params;
+  const messages = await getMessages({ locale });
+
+  return {
+    title: messages.metadata.title,
+  };
+}
+
 type Props = {
   children: React.ReactNode;
   params: { locale: string };
 };
 
-// Layout que define a estrutura base da aplicação para cada idioma
+// Layout que define a estrutura base da aplicação, com suporte para os idiomas
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params; // Obtém o idioma da URL dinâmica
 
