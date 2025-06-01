@@ -13,23 +13,24 @@ export default function Menu({ menuOpen, setMenuOpen }: Props) {
 
   return (
     // Div abrindo sobre a página inteira
-    <div className="fixed inset-0 z-50 bg-whitesmoke dark:bg-bluishBlack flex flex-col sm:p-6 md:p-12 lg:p-18 xl:p-20">
+    <div className="fixed inset-0 z-50 bg-whitesmoke dark:bg-bluishBlack flex flex-col items-center p-5 sm:items-start sm:p-6 md:p-12 lg:p-18 xl:p-20">
       <Header menuOpen={menuOpen} setMenuOpen={() => setMenuOpen(false)} />
 
-      <div className="flex flex-1 items-center gap-15">
-        <Image
-          src="/assets/images/leaf.svg"
-          alt="Leaf image"
-          width={400}
-          height={400}
-          className="opacity-70 h-auto left-30"
-          priority
-        />
+      <div className="flex flex-1 items-center lg:gap-15">
+        <div className="w-70 aspect-[86/85] absolute left-1/2 -translate-x-1/2 bottom-[-22%] sm:bottom-auto sm:translate-x-0 sm:left-20 sm:w-80 md:left-12 md:w-110 lg:left-40">
+          <Image
+            src="/assets/images/leaf.svg"
+            alt="Leaf image"
+            fill
+            className="opacity-70 sm:opacity-30"
+            priority
+          />
+        </div>
 
-        <div className="flex flex-col gap-5">
-          <nav className="text-7xl/21 font-semibold text-bluishBlack dark:text-whitesmoke">
+        <div className="flex flex-col gap-5 z-1 ml-0 sm:ml-58 md:ml-62 lg:ml-85">
+          <nav className="text-5xl/13 font-semibold text-bluishBlack dark:text-whitesmoke sm:text-6xl/16 md:text-7xl/20">
             {/* Link para cada seção */}
-            <ol className="flex flex-col list-decimal marker:text-xl">
+            <ol className="flex flex-col list-decimal marker:text-lg sm:marker:text-xl">
               <Link href="/" onClick={() => setMenuOpen(false)}>
                 <li>{t("home")}</li>
               </Link>
@@ -46,7 +47,7 @@ export default function Menu({ menuOpen, setMenuOpen }: Props) {
           </nav>
 
           {/* Link das redes sociais, com o ícone de setinha */}
-          <ul className="flex gap-5 font-inter text-lg [&>a>li]:flex [&>a>li]:items-center [&>a>li]:gap-2">
+          <ul className="flex gap-5 font-inter text-xl [&>a>li]:flex [&>a>li]:items-center [&>a>li]:gap-2 sm:text-2xl">
             <a
               href="https://github.com/gustavodacostap"
               target="_blank"
@@ -57,7 +58,7 @@ export default function Menu({ menuOpen, setMenuOpen }: Props) {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="darkOrange"
-                  className="size-4"
+                  className="size-4 lg:size-5"
                 >
                   <path
                     fillRule="evenodd"
@@ -78,7 +79,7 @@ export default function Menu({ menuOpen, setMenuOpen }: Props) {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="darkOrange"
-                  className="size-4"
+                  className="size-4 lg:size-5"
                 >
                   <path
                     fillRule="evenodd"

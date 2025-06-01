@@ -27,14 +27,14 @@
   }
 
   h3 {
-    @apply text-xl font-normal;
+    @apply text-2xl font-normal;
   }
 
   .brackets {
-    @apply text-5xl text-dodgerblue font-medium;
+    @apply text-4xl lg:text-5xl text-dodgerblue font-medium;
   }
 
   .btn-primary {
-    @apply bg-dodgerblue px-4 py-1.5 mt-9 rounded-lg text-whitesmoke text-lg font-medium;
+    @apply bg-dodgerblue px-4 py-1.5 mt-9 rounded-lg text-whitesmoke font-medium text-sm sm:text-base lg:text-lg;
   }
 }

@@ -17,12 +17,9 @@ export default function Header({ menuOpen, setMenuOpen }: Props) {
       <nav className="flex items-center justify-between">
         {/* Logo que tem o link para a Home */}
         <Link href="/">
-          <Image
-            src="/assets/images/logo-g.dev.svg"
-            alt="Logo g.dev"
-            width={100}
-            height={50}
-          />
+          <div className="w-22 aspect-[173/82] relative md:w-25 ">
+            <Image fill alt="Logo g.dev" src="/assets/images/logo-g.dev.svg" />
+          </div>
         </Link>
 
         {/* Botões de mudar idioma, mudar tema e abrir menu */}

@@ -17,7 +17,7 @@ export default function LanguageSwitcher() {
     <Link
       href={newPath}
       locale={newLocale}
-      className="text-base md:text-lg font-semibold text-bluishBlack dark:text-whitesmoke"
+      className="text-base sm:text-lg font-semibold text-bluishBlack dark:text-whitesmoke"
     >
       {newLocale.toUpperCase()}
     </Link>

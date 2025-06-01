@@ -18,7 +18,7 @@ export default function MenuToggleButton({ isOpen, onClick }: Props) {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
-          className="size-12"
+          className="size-10 sm:size-12"
         >
           <path
             fillRule="evenodd"
@@ -31,7 +31,7 @@ export default function MenuToggleButton({ isOpen, onClick }: Props) {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
-          className="size-12"
+          className="size-10 sm:size-12"
         >
           <path
             fillRule="evenodd"
