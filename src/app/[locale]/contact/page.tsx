@@ -35,7 +35,11 @@ export default function Contact() {
                   />
                 </svg>
                 <p className="text-xl lg:text-2xl">
-                  gustavopaulyno2012@gmail.com
+                  gustavopaulyno2012@
+                  <wbr />
+                  gmail
+                  <wbr />
+                  .com
                 </p>
               </div>
             </a>
