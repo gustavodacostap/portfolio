@@ -13,7 +13,7 @@ export default function Menu({ menuOpen, setMenuOpen }: Props) {
 
   return (
     // Div abrindo sobre a página inteira
-    <div className="fixed inset-0 z-50 bg-whitesmoke dark:bg-bluishBlack flex flex-col items-center p-5 sm:items-start sm:p-6 md:p-12 lg:p-18 xl:p-20">
+    <div className="min-h-screen fixed inset-0 z-50 bg-whitesmoke dark:bg-bluishBlack flex flex-col items-center p-5 sm:items-start sm:p-6 md:p-12 lg:p-18 xl:p-20">
       <Header menuOpen={menuOpen} setMenuOpen={() => setMenuOpen(false)} />
 
       <div className="flex flex-1 items-center lg:gap-15">
