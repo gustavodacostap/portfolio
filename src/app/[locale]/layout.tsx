@@ -40,7 +40,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       <head>
         <link rel="icon" href="/assets/favicon/favicon.svg" sizes="32x32" />
       </head>
-      <body className="bg-whitesmoke h-full min-h-screen p-5 pb-0 sm:p-6 sm:pb-0 md:p-12 md:pb-0 lg:p-18 lg:pb-0 xl:p-20 xl:pb-0 font-poppins text-bluishBlack dark:bg-bluishBlack dark:text-whitesmoke">
+      <body className="bg-whitesmoke h-full flex flex-col min-h-screen p-5 pb-0 sm:p-6 sm:pb-0 md:p-12 md:pb-0 lg:p-18 lg:pb-0 xl:p-20 xl:pb-0 font-poppins text-bluishBlack dark:bg-bluishBlack dark:text-whitesmoke">
         {/* Provedor de tema que controla o modo claro e escuro */}
         <ThemeProvider>
           {/* Provedor de internacionalização que disponibiliza traduções para toda a aplicação */}
