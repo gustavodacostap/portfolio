@@ -13,10 +13,10 @@ export default function Menu({ menuOpen, setMenuOpen }: Props) {
 
   return (
     // Div abrindo sobre a página inteira
-    <div className="min-h-screen fixed inset-0 z-50 bg-whitesmoke dark:bg-bluishBlack flex flex-col items-center p-5 sm:items-start sm:p-6 md:p-12 lg:p-18 xl:p-20">
+    <div className="h-screen fixed inset-0 z-50 bg-whitesmoke dark:bg-bluishBlack flex flex-col overflow-hidden items-center p-5 sm:items-start sm:p-6 md:p-12 lg:p-18 xl:p-20">
       <Header menuOpen={menuOpen} setMenuOpen={() => setMenuOpen(false)} />
 
-      <div className="flex flex-1 items-center lg:gap-15">
+      <div className="flex flex-grow items-center overflow-hidden lg:gap-15">
         <div className="w-70 aspect-[86/85] absolute left-1/2 -translate-x-1/2 bottom-[-22%] sm:bottom-auto sm:translate-x-0 sm:left-20 sm:w-80 md:left-12 md:w-110 lg:left-40">
           <Image
             src="/assets/images/leaf.svg"
