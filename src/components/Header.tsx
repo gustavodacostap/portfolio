@@ -13,7 +13,7 @@ interface Props {
 
 export default function Header({ menuOpen, setMenuOpen }: Props) {
   return (
-    <header className="w-full bg-whitesmoke dark:bg-bluishBlack">
+    <header className="w-full p-5 pb-0 sm:p-6 sm:pb-0 md:p-12 md:pb-0 lg:p-18 lg:pb-0 xl:p-20 xl:pb-0 bg-whitesmoke dark:bg-bluishBlack">
       <nav className="flex items-center justify-between">
         {/* Logo que tem o link para a Home */}
         <Link href="/">

@@ -5,24 +5,25 @@ export default function About() {
   const t = useTranslations("about");
 
   return (
-    <main>
+    <main className="px-5">
       <div>
-        <Image
-          src="/assets/images/foto-gu.jpg"
-          width={330}
-          height={300}
-          alt="Gustavo's photo"
-          className="h-auto rounded-tr-4xl absolute left-0 bottom-0"
-        />
-        <div className="ml-90 mt-20">
+        <div className="aspect-[643/1069] w-90 max-w-full mx-auto relative mt-5 rounded-4xl lg:rounded-tr-4xl overflow-hidden">
+          <Image
+            src="/assets/images/foto-gu.jpg"  
+            fill
+            alt="Gustavo's photo"
+            className="object-cover"
+          />
+        </div>
+        <div className="mt-7">
           <div className="flex">
             <span className="brackets">&#123;</span>
             <h2>{t("h2")}</h2>
             <span className="brackets">&#125;</span>
           </div>
           <hr className="my-5" />
-          <p className="w-170">{t("p")}</p>
-          <button className="btn-primary">
+          <p className="w-full">{t("p")}</p>
+          <button className="btn-primary mt-5 mb-20">
             <a
               href="/assets/docs/Currículo Gustavo da Costa.pdf"
               target="_blank"
