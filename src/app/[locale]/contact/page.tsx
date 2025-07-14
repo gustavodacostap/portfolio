@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 export default function Contact() {
   const t = useTranslations("contact");
   return (
-    <main className="mt-10 xl:mt-20 lg:mx-13 xl:mx-0">
+    <main className="mt-10 mx-5 sm:mx-6 md:mx-12 lg:mx-35 xl:mt-20 xl:mx-20 2xl:mx-40">
       <div className="flex">
         <span className="brackets">&#123;</span>
         <h2 className="text-4xl lg:text-5xl">{t("h2")}</h2>
