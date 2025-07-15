@@ -17,7 +17,7 @@ export default function Menu({ menuOpen, setMenuOpen }: Props) {
       <Header menuOpen={menuOpen} setMenuOpen={() => setMenuOpen(false)} />
 
       <div className="flex flex-grow items-center overflow-hidden lg:gap-15">
-        <div className="w-70 h-auto aspect-[86/85] absolute left-1/2 -translate-x-1/2 bottom-[-15%] sm:bottom-auto sm:translate-x-0 sm:left-20 sm:w-80 md:left-12 md:w-110 lg:left-40">
+        <div className="h-[35%] aspect-[86/85] absolute left-1/2 -translate-x-1/2 bottom-[-15%] sm:h-auto sm:bottom-auto sm:translate-x-0 sm:left-20 sm:w-80 md:left-12 md:w-110 lg:left-40">
           <Image
             src="/assets/images/leaf.svg"
             alt="Leaf image"
