@@ -37,4 +37,8 @@
   .btn-primary {
     @apply bg-dodgerblue px-4 py-1.5 mt-9 rounded-lg text-whitesmoke font-medium text-sm sm:text-base lg:text-lg;
   }
+
+  .project-lines {
+    @apply border-softWhite border-t-2;
+  }
 }

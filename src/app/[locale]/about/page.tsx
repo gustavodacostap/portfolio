@@ -6,7 +6,7 @@ export default function About() {
 
   return (
     <main className="px-5 sm:px-6 md:px-0 md:pr-12 md:py-12 md:flex md:items-start lg:pr-18 xl:pr-20">
-        <div className="aspect-[643/1069] w-75 max-w-full mx-auto relative my-5 rounded-4xl sm:my-6 md:my-0 md:mx-0 md:w-[35%] md:max-w-100 md:rounded-none md:rounded-r-4xl overflow-hidden">
+        <div className="aspect-[643/1069] w-75 max-w-full mx-auto relative my-10 rounded-4xl sm:my-6 md:my-0 md:mx-0 md:w-[35%] md:max-w-100 md:rounded-none md:rounded-r-4xl overflow-hidden">
           <Image
             src="/assets/images/foto-gu.jpg"  
             fill
@@ -14,10 +14,10 @@ export default function About() {
             className="object-cover"
           />
         </div>
-        <div className="mt-5 flex-grow sm:mt-6 md:my-0 md:pl-12 md:w-1/2">
+        <div className="mt-10 flex-grow sm:mt-6 md:my-0 md:pl-12 md:w-1/2">
           <div className="flex md:justify-start">
             <span className="brackets">&#123;</span>
-            <h2>{t("h2")}</h2>
+            <h2 className="text-4xl md:text-5xl">{t("h2")}</h2>
             <span className="brackets">&#125;</span>
           </div>
           <hr className="my-5" />
