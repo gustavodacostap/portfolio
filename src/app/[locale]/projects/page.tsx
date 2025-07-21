@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export default function Projects() {
   const t = useTranslations("projects");
@@ -10,15 +11,28 @@ export default function Projects() {
           <h2 className="text-4xl md:text-5xl">{t("h2")}</h2>
           <span className="brackets">&#125;</span>
         </div>
+        
         <hr className="project-lines" />
-        <ul className="text-xl md:text-2xl font-medium [&>a>li]:flex [&>a>li]:items-center [&>a>li]:h-15">
-          <a href="/projects/TaskManagerWeb"><li>Task Manager Web</li></a>
+
+        <ul className="text-xl md:text-2xl font-medium [&>a>li]:flex [&>a>li]:items-center [&>a>li]:py-4">
+          <Link href="/projects/TaskManagerWeb">
+            <li>{t("taskManagerWeb")}</li>
+          </Link>
           <hr className="project-lines" />
-          <a href="/projects/CurrencyConverter"><li>Currency Converter</li></a>
+
+          <Link href="/projects/CurrencyConverter">
+            <li>{t("currencyConverter")}</li>
+          </Link>
           <hr className="project-lines" />
-          <a href="/projects/ImportadorFeriados"><li>Importador Feriados</li></a>
+
+          <Link href="/projects/ImportadorFeriados">
+            <li>{t("holidayImporter")}</li>
+          </Link>
           <hr className="project-lines" />
-          <a href="/projects/PasswordGenerator"><li>Password Generator</li></a>
+
+          <Link href="/projects/PasswordGenerator">
+            <li>{t("passwordGenerator")}</li>
+          </Link>
         </ul>
       </div>
     </main>

@@ -20,7 +20,11 @@
     "button": "Meu currículo"
   },
   "projects": {
-    "h2": "Projetos"
+    "h2": "Projetos",
+    "taskManagerWeb": "Gerenciador de Tarefas Web",
+    "currencyConverter": "Conversor de Moedas",
+    "holidayImporter": "Importador de Feriados",
+    "passwordGenerator": "Gerador de Senhas"
   },
   "contact": {
     "h2": "Contato",

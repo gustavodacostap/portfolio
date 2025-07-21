@@ -20,7 +20,11 @@
     "button": "My Resume"
   },
   "projects": {
-    "h2": "Projects"
+    "h2": "Projects",
+    "taskManagerWeb": "Task Manager Web",
+    "currencyConverter": "Currency Converter",
+    "holidayImporter": "Holiday Importer",
+    "passwordGenerator": "Password Generator"
   },
   "contact": {
     "h2": "Contact",
