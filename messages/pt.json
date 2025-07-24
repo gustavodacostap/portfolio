@@ -21,10 +21,18 @@
   },
   "projects": {
     "h2": "Projetos",
-    "taskManagerWeb": "Gerenciador de Tarefas Web",
-    "currencyConverter": "Conversor de Moedas",
-    "holidayImporter": "Importador de Feriados",
-    "passwordGenerator": "Gerador de Senhas"
+    "taskManagerWebT": "Gerenciador de Tarefas Web",
+    "currencyConverterT": "Conversor de Moedas",
+    "holidayImporterT": "Importador de Feriados",
+    "passwordGeneratorT": "Gerador de Senhas",
+    "tech": "Tecnologias",
+    "images": "Imagens",
+    "nextProject": "Próximo projeto",
+    "taskManagerWeb": {
+      "title": "Gerenciador de Tarefas Web",
+      "description": "Sistema web para gerenciamento de tarefas desenvolvido com ASP.NET Core, inicialmente criado com Razor Pages para praticar o padrão MVC e CRUD básico. Na sequência, evoluí o projeto para uma SPA (Single Page Application) moderna, utilizando API REST, AJAX e JavaScript modularizado (ES Modules), com atualizações dinâmicas e sem recarregar a página. O projeto foi criado para aprimorar minhas habilidades em ASP.NET Core full stack. Usa SQLite como banco de dados local, por isso não possui versão online, mas é possível conferir o funcionamento da aplicação nas imagens e vídeo mais abaixo.",
+      "titleNextProject": "Conversor de Moedas"
+    }
   },
   "contact": {
     "h2": "Contato",

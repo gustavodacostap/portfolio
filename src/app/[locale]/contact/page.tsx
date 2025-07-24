@@ -9,7 +9,7 @@ export default function Contact() {
         <h2 className="text-4xl lg:text-5xl">{t("h2")}</h2>
         <span className="brackets">&#125;</span>
       </div>
-      <hr className="my-5" />
+      <hr className="my-5 lines" />
       <div className="flex flex-col gap-8 xl:gap-0 xl:flex-row">
         <div className="flex flex-col flex-1 gap-2 md:gap-0 md:flex-row xl:gap-8">
           <h3 className="flex-1 text-xl lg:text-2xl xl:flex-none">

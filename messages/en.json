@@ -17,14 +17,22 @@
   "about": {
     "h2": "About",
     "p": "Web developer in training, passionate about creating digital solutions with purpose and creativity. I study ADS and am specializing in technologies such as HTML, CSS, JavaScript, TypeScript, Bootstrap, Sass, React, Next.js, Node.js, MongoDB, and Sequelize. I dream of living abroad and am building my path with practical projects, constant learning, and a lot of dedication.",
-    "button": "My Resume"
+    "button": "My resume"
   },
   "projects": {
     "h2": "Projects",
-    "taskManagerWeb": "Task Manager Web",
-    "currencyConverter": "Currency Converter",
-    "holidayImporter": "Holiday Importer",
-    "passwordGenerator": "Password Generator"
+    "taskManagerWebT": "Task Manager Web",
+    "currencyConverterT": "Currency Converter",
+    "holidayImporterT": "Holiday Importer",
+    "passwordGeneratorT": "Password Generator",
+    "tech": "Technologies",
+    "images": "Images",
+    "nextProject": "Next project",
+    "taskManagerWeb": {
+      "title": "Task Manager Web",
+      "description": "Web-based task management system developed with ASP.NET Core. Initially built using Razor Pages to practice the MVC pattern and basic CRUD operations. Later, the project evolved into a modern Single Page Application (SPA) using RESTful API, AJAX, and modular JavaScript (ES Modules), allowing dynamic updates without page reloads. This project was created to improve my full stack ASP.NET Core skills. It uses SQLite as a local database, so there’s no live version available, but you can see how the application works through the images and video below.",
+      "titleNextProject": "Holiday Importer"
+    }
   },
   "contact": {
     "h2": "Contact",

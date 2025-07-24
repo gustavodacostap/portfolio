@@ -1,44 +1,104 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TaskManagerWeb() {
+  const t = useTranslations("projects.taskManagerWeb");
+  const p = useTranslations("projects");
   return (
-    <main className="px-5 sm:px-6">
-      <div className="relative aspect-[1913/953] w-full rounded-4xl mt-10">
+    <main className="px-5 sm:px-6 md:px-12 lg:px-[10%] xl:px-[13%] 2xl:px-[15%]">
+      <div className="relative w-full h-full aspect-video overflow-hidden rounded-2xl sm:rounded-4xl my-10">
         <Image
           fill
-          alt="Cartoon image"
-          src="/assets/images/projects/TaskManagerWeb/lista-principal.png"
-          className="object-cover object-top"
+          alt="Task Manager Web preview"
+          src="/assets/images/projects/previews/task-manager.svg"
+          className="object-cover object-center"
+          sizes="(min-width: 768px) 50vw"
         />
       </div>
-      <h2 className="text-2xl md:text-4xl mt-10 text-darkOrange">
-        Task Manager Web
+      <h2 className="text-2xl md:text-4xl text-darkOrange">
+        {t("title")}
       </h2>
-      <hr className="project-lines mt-2" />
-      <p className="mt-5">
-        Sistema web para gerenciamento de tarefas desenvolvido com ASP.NET Core,
-        inicialmente criado com Razor Pages para praticar o padrão MVC e CRUD
-        básico. Na sequência, evoluí o projeto para uma SPA (Single Page
-        Application) moderna, utilizando API REST, AJAX e JavaScript
-        modularizado (ES Modules), com atualizações dinâmicas e sem recarregar a
-        página. O projeto foi criado para aprimorar minhas habilidades em
-        ASP.NET Core full stack. Usa SQLite como banco de dados local, por isso
-        não possui versão online — mas é possível conferir o funcionamento da
-        aplicação nas imagens e vídeo abaixo. Tecnologias utilizadas: ASP.NET
-        Core 9 · Razor Pages · API REST · C# · Entity Framework Core · SQLite ·
-        AJAX (jQuery) · JavaScript ES Modules · jQuery Validation · Bootstrap 5
-      </p>
+      <hr className="lines mt-2" />
 
-      <h3 className="text-center text-xl">Imagens</h3>
+      <div className="flex flex-col md:flex-row md:gap-10">
+        <p className="mt-5 md:w-2/3">{t("description")}</p>
 
-      <div className="relative aspect-[1913/953] w-full rounded-4xl mt-10">
+        <div className="md:w-1/3">
+          <h2 className="text-xl font-medium md:text-2xl mt-5">{p("tech")}</h2>
+
+          <div className="flex mt-3 gap-[10%] md:flex-col md:gap-0 xl:flex-row xl:gap-[10%]">
+            <ul className="list-disc pl-4 marker:text-dodgerblue">
+              <li>ASP.NET Core 9</li>
+              <li>Razor Pages</li>
+              <li>API REST</li>
+              <li>C#</li>
+              <li>Entity Framework Core</li>
+            </ul>
+            <ul className="list-disc pl-4 marker:text-dodgerblue">
+              <li>SQLite</li>
+              <li>AJAX (jQuery)</li>
+              <li>JavaScript ES Modules</li>
+              <li>jQuery Validation</li>
+              <li>Bootstrap 5</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <h2 className="text-center text-xl mt-7 font-medium md:text-2xl">{p("images")}</h2>
+
+      <div className="relative aspect-video h-full w-full mt-5">
         <Image
           fill
           alt="Cartoon image"
           src="/assets/images/projects/TaskManagerWeb/lista-principal.png"
           className="object-cover object-top"
+          sizes="(min-width: 768px) 50vw"
         />
       </div>
+
+      <div className="relative aspect-video h-full w-full mt-3">
+        <Image
+          fill
+          alt="Cartoon image"
+          src="/assets/images/projects/TaskManagerWeb/criar-nova-tarefa.png"
+          className="object-cover object-top"
+          sizes="(min-width: 768px) 50vw"
+        />
+      </div>
+
+      <div className="relative aspect-video h-full w-full mt-3">
+        <Image
+          fill
+          alt="Cartoon image"
+          src="/assets/images/projects/TaskManagerWeb/editar-tarefa.png"
+          className="object-cover object-top"
+          sizes="(min-width: 768px) 50vw"
+        />
+      </div>
+
+      <div className="relative aspect-video h-full w-full mt-3">
+        <Image
+          fill
+          alt="Cartoon image"
+          src="/assets/images/projects/TaskManagerWeb/excluir-lista.png"
+          className="object-cover object-top"
+          sizes="(min-width: 768px) 50vw"
+        />
+      </div>
+
+      <hr className="mt-5 lines" />
+      <footer className="my-5">
+        <nav className="flex items-center justify-between">
+          <Link href="/projects/CurrencyConverter" className="font-medium text-lg md:text-xl">
+            {p("nextProject")}
+          </Link>
+          <Link href="/projects/CurrencyConverter" className="text-right font-medium text-lg md:text-xl">
+            {t("titleNextProject")}
+          </Link>
+        </nav>
+      </footer>
     </main>
   );
 }

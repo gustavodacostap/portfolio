@@ -6,8 +6,8 @@ export default function Home() {
   const t = useTranslations("home");
 
   return (
-    <main className="flex flex-col flex-grow place-items-center w-full p-5 pb-0 sm:p-6 sm:pb-0 md:p-12 md:pb-0 lg:p-18 lg:pb-0 lg:flex-row lg:justify-between xl:p-20 xl:pb-0 ">
-      <div className="mt-15 flex flex-col place-items-center lg:place-items-baseline lg:w-120 lg:mt-0 lg:text-start lg:block">
+    <main className="flex flex-col flex-grow place-items-center w-full px-5 sm:px-6 md:px-12 lg:px-18 lg:flex-row lg:justify-between xl:px-20">
+      <div className="mt-15 flex flex-col place-items-center lg:place-items-baseline lg:w-120 lg:mt-15 lg:text-start lg:block">
         <h1 className="text-4xl text-center font-semibold w-full sm:max-w-[80%] sm:text-5xl md:text-6xl lg:text-left xl:w-80 dark:text-whitesmoke">
           {/* Insere a tradução e estiliza apenas o "code/código" */}
           {t.rich("h1", {

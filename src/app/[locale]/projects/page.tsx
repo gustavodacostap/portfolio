@@ -24,14 +24,15 @@ export default function Projects() {
           <span className="brackets">&#125;</span>
         </div>
 
-        <hr className="project-lines" />
+        <hr className="lines mb-1" />
+        <hr className="lines" />
 
         <ul className="text-xl md:text-2xl font-medium [&>a>li]:flex [&>a>li]:items-center [&>a>li]:py-4">
           {[
-            { slug: "TaskManagerWeb", label: t("taskManagerWeb") },
-            { slug: "CurrencyConverter", label: t("currencyConverter") },
-            { slug: "ImportadorFeriados", label: t("holidayImporter") },
-            { slug: "PasswordGenerator", label: t("passwordGenerator") },
+            { slug: "TaskManagerWeb", label: t("taskManagerWebT") },
+            { slug: "CurrencyConverter", label: t("currencyConverterT") },
+            { slug: "ImportadorFeriados", label: t("holidayImporterT") },
+            { slug: "PasswordGenerator", label: t("passwordGeneratorT") },
           ].map((project, index, array) => (
             <Fragment key={project.slug}>
               <Link href={`/projects/${project.slug}`}>
@@ -43,7 +44,7 @@ export default function Projects() {
                 </li>
               </Link>
               {/* Só adiciona a linha se não for o último item */}
-              {index < array.length - 1 && <hr className="project-lines" />}
+              {index < array.length - 1 && <hr className="lines" />}
             </Fragment>
           ))}
         </ul>
@@ -52,7 +53,7 @@ export default function Projects() {
       {/* Imagem exibida ao lado no hover (apenas em md+) */}
       <div className="hidden md:flex md:w-1/2 items-center justify-center">
         {hovered && (
-          <div className="relative w-full h-full aspect-video overflow-hidden rounded-l-4xl shadow-xl transition-all duration-300">
+          <div className="relative w-full h-full aspect-video overflow-hidden rounded-l-4xl transition-all duration-300">
             <Image
               src={projectImages[hovered]}
               alt={`${hovered} preview`}
