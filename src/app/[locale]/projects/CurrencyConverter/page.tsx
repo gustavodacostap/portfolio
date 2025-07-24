@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function TaskManagerWeb() {
-  const t = useTranslations("projects.taskManagerWeb");
+  const t = useTranslations("projects.currencyConverter");
   const p = useTranslations("projects");
 
   const taskManagerImages = [
@@ -18,8 +18,8 @@ export default function TaskManagerWeb() {
       <div className="relative w-full h-full aspect-video overflow-hidden rounded-2xl sm:rounded-4xl my-10">
         <Image
           fill
-          alt="Task Manager Web preview"
-          src="/assets/images/projects/previews/task-manager.svg"
+          alt="Currency Converter preview"
+          src="/assets/images/projects/previews/currency-converter.svg"
           className="object-cover object-center"
           sizes="(min-width: 768px) 50vw"
         />

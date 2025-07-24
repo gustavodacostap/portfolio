@@ -27,7 +27,7 @@ export default function Menu({ menuOpen, setMenuOpen }: Props) {
           />
         </div>
 
-        <div className="flex flex-col gap-5 z-1 ml-0 sm:ml-58 md:ml-62 lg:ml-85">
+        <div className="flex flex-col gap-5 z-2 ml-0 sm:ml-58 md:ml-62 lg:ml-85">
           <nav className="text-5xl/13 font-semibold text-bluishBlack dark:text-whitesmoke sm:text-6xl/16 md:text-7xl/20">
             {/* Link para cada seção */}
             <ol className="flex flex-col list-decimal marker:text-lg sm:marker:text-xl">

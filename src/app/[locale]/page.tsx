@@ -6,9 +6,9 @@ export default function Home() {
   const t = useTranslations("home");
 
   return (
-    <main className="flex flex-col flex-grow place-items-center w-full px-5 sm:px-6 md:px-12 lg:px-18 lg:flex-row lg:justify-between xl:px-20">
-      <div className="mt-15 flex flex-col place-items-center lg:place-items-baseline lg:w-120 lg:mt-15 lg:text-start lg:block">
-        <h1 className="text-4xl text-center font-semibold w-full sm:max-w-[80%] sm:text-5xl md:text-6xl lg:text-left xl:w-80 dark:text-whitesmoke">
+    <main className="flex flex-col flex-grow place-items-center min-h-screen w-full px-5 sm:px-6 md:px-12 lg:px-18 lg:flex-row lg:justify-between xl:px-20">
+      <div className="flex flex-col place-items-center lg:place-items-baseline lg:w-120 lg:mt-0 lg:text-start lg:block">
+        <h1 className="mt-20 text-4xl text-center font-semibold w-full sm:max-w-[80%] sm:text-5xl md:text-6xl lg:mt-0 lg:text-left xl:w-80 dark:text-whitesmoke">
           {/* Insere a tradução e estiliza apenas o "code/código" */}
           {t.rich("h1", {
             code: (chunks) => (

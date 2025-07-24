@@ -31,7 +31,7 @@
     "taskManagerWeb": {
       "title": "Task Manager Web",
       "description": "Web-based task management system developed with ASP.NET Core. Initially built using Razor Pages to practice the MVC pattern and basic CRUD operations. Later, the project evolved into a modern Single Page Application (SPA) using RESTful API, AJAX, and modular JavaScript (ES Modules), allowing dynamic updates without page reloads. This project was created to improve my full stack ASP.NET Core skills. It uses SQLite as a local database, so there’s no live version available, but you can see how the application works through the images and video below.",
-      "titleNextProject": "Holiday Importer"
+      "titleNextProject": "Currency Converter"
     }
   },
   "contact": {

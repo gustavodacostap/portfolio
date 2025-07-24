@@ -32,6 +32,23 @@
       "title": "Gerenciador de Tarefas Web",
       "description": "Sistema web para gerenciamento de tarefas desenvolvido com ASP.NET Core, inicialmente criado com Razor Pages para praticar o padrão MVC e CRUD básico. Na sequência, evoluí o projeto para uma SPA (Single Page Application) moderna, utilizando API REST, AJAX e JavaScript modularizado (ES Modules), com atualizações dinâmicas e sem recarregar a página. O projeto foi criado para aprimorar minhas habilidades em ASP.NET Core full stack. Usa SQLite como banco de dados local, por isso não possui versão online, mas é possível conferir o funcionamento da aplicação nas imagens e vídeo mais abaixo.",
       "titleNextProject": "Conversor de Moedas"
+    },
+    "currencyConverter": {
+      "title": "Conversor de Moedas",
+      "description": "Projeto completo de conversor de moedas criado para aprimorar meus conhecimentos em desenvolvimento full stack com Next.js e ASP.NET Core. A aplicação consiste em um frontend moderno, responsivo e acessível, que consome dados de câmbio de uma API própria desenvolvida separadamente. O backend está hospedado gratuitamente no Render, o que pode causar uma pequena lentidão na primeira requisição devido ao modo de hibernação automática da plataforma quando a API está inativa.",
+      "titleNextProject": "Importador de Feriados",
+      "injection": "Injeção de dependência"
+    },
+    "holidayImporter": {
+      "title": "Importador de Feriados",
+      "description": "",
+      "titleNextProject": "Gerador de Senhas"
+    },
+    "passwordGenerator": {
+      "title": "Gerador de Senhas",
+      "description": "",
+      "titleNextProject": "Gerenciador de Tarefas Web"
+      
     }
   },
   "contact": {
