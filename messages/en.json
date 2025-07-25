@@ -30,8 +30,28 @@
     "nextProject": "Next project",
     "taskManagerWeb": {
       "title": "Task Manager Web",
-      "description": "Web-based task management system developed with ASP.NET Core. Initially built using Razor Pages to practice the MVC pattern and basic CRUD operations. Later, the project evolved into a modern Single Page Application (SPA) using RESTful API, AJAX, and modular JavaScript (ES Modules), allowing dynamic updates without page reloads. This project was created to improve my full stack ASP.NET Core skills. It uses SQLite as a local database, so there’s no live version available, but you can see how the application works through the images and video below.",
-      "titleNextProject": "Currency Converter"
+      "description": "Web-based task management system developed with ASP.NET Core. Initially built using Razor Pages to practice the MVC pattern and basic CRUD operations. Later, the project evolved into a modern Single Page Application (SPA) using RESTful API, AJAX, and modular JavaScript (ES Modules), allowing dynamic updates without page reloads. This project was created to improve my full stack ASP.NET Core skills. It uses SQLite as a local database, so there’s no live version available, but you can see how the application works through the images below.",
+      "titleNextProject": "Currency Converter",
+      "link-text": "View repository"
+    },
+    "currencyConverter": {
+      "title": "Currency Converter",
+      "description": "A complete currency converter project created to enhance my full stack development skills using Next.js and ASP.NET Core. The application features a modern, responsive, and accessible frontend that consumes exchange rate data from a custom-built backend API, developed separately. The backend is hosted for free on Render, which may cause a slight delay on the first request due to the platform’s automatic sleep mode when the API is inactive.",
+      "titleNextProject": "Holiday Importer",
+      "injection": "Dependency Injection",
+      "link-text": "View project"
+    },
+    "holidayImporter": {
+      "title": "Holiday Importer",
+      "description": "Project developed during my internship with the goal of automating the import of national, state, and municipal holidays into the organization's internal system. The application reads a standardized Excel spreadsheet, processes the data, and automatically updates the holiday-related tables in the company’s database. The system was built as a reusable utility class integrated into the main system, and includes features for generating logs and Excel reports to review the imported data. The code is modularized and well-documented to facilitate future maintenance and adaptations.",
+      "titleNextProject": "Password Generator",
+      "link-text": "View repository"
+    },
+    "passwordGenerator": {
+      "title": "Password Generator",
+      "description": "This project was created to practice React with TypeScript, where I built a simple yet functional application to generate random passwords with length defined by user. It features an intuitive interface, visual feedback via toast notifications, and real-time interactions, such as automatically generating a new password when adjusting the length. This was my first project using React + TypeScript and it helped me solidify key concepts like state management, side effects, and working with references using hooks.",
+      "titleNextProject": "Task Manager Web",
+      "link-text": "View project"
     }
   },
   "contact": {

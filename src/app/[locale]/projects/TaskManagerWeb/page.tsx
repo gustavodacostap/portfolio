@@ -30,7 +30,27 @@ export default function TaskManagerWeb() {
       <hr className="lines mt-2" />
 
       <div className="flex flex-col md:flex-row md:gap-10">
-        <p className="mt-5 md:w-2/3">{t("description")}</p>
+        <div className="flex flex-col gap-5 mt-5 md:w-2/3">
+          <p>{t("description")}</p>
+          <Link href="https://github.com/gustavodacostap/TaskManagerWeb" target="_blank" className="text-right text-lg md:text-xl">
+            <div className="flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="darkOrange"
+                className="size-4 lg:size-5"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              {t("link-text")}
+            </div>
+
+          </Link>
+        </div>
 
         <div className="md:w-1/3">
           <h2 className="text-xl font-medium md:text-2xl mt-5">{p("tech")}</h2>

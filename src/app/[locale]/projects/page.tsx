@@ -12,7 +12,7 @@ export default function Projects() {
   const projectImages: Record<string, string> = {
     TaskManagerWeb: "/assets/images/projects/previews/task-manager.svg",
     CurrencyConverter: "/assets/images/projects/previews/currency-converter.svg",
-    ImportadorFeriados: "/assets/images/projects/previews/holiday-importer.svg",
+    HolidayImporter: "/assets/images/projects/previews/holiday-importer.svg",
     PasswordGenerator: "/assets/images/projects/previews/password-generator.svg",
   };
   return (
@@ -32,7 +32,7 @@ export default function Projects() {
             {[
               { slug: "TaskManagerWeb", label: t("taskManagerWebT") },
               { slug: "CurrencyConverter", label: t("currencyConverterT") },
-              { slug: "ImportadorFeriados", label: t("holidayImporterT") },
+              { slug: "HolidayImporter", label: t("holidayImporterT") },
               { slug: "PasswordGenerator", label: t("passwordGeneratorT") },
             ].map((project, index, array) => (
               <Fragment key={project.slug}>
