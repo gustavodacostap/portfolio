@@ -6,11 +6,11 @@ export default function TaskManagerWeb() {
   const t = useTranslations("projects.currencyConverter");
   const p = useTranslations("projects");
 
-  const taskManagerImages = [
-    "lista-principal.png",
-    "criar-nova-tarefa.png",
-    "editar-tarefa.png",
-    "excluir-lista.png",
+  const currencyConverterImages = [
+    "tela-inicial.png",
+    "selecao-moeda.png",
+    "conversao.png",
+    "mobile.png",
   ];
 
   return (
@@ -38,17 +38,15 @@ export default function TaskManagerWeb() {
           <div className="flex mt-3 gap-[10%] md:flex-col md:gap-0 xl:flex-row xl:gap-[10%]">
             <ul className="list-disc pl-4 marker:text-dodgerblue">
               <li>ASP.NET Core 9</li>
-              <li>Razor Pages</li>
-              <li>API REST</li>
               <li>C#</li>
-              <li>Entity Framework Core</li>
+              <li>Swagger</li>
+              <li>HttpClient</li>
+              <li>Injeção de dependência</li>
             </ul>
             <ul className="list-disc pl-4 marker:text-dodgerblue">
-              <li>SQLite</li>
-              <li>AJAX (jQuery)</li>
-              <li>JavaScript ES Modules</li>
-              <li>jQuery Validation</li>
-              <li>Bootstrap 5</li>
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Tailwind CSS</li>
             </ul>
           </div>
         </div>
@@ -57,17 +55,18 @@ export default function TaskManagerWeb() {
       <h2 className="text-center text-xl mt-7 font-medium md:text-2xl">{p("images")}</h2>
 
       <>
-        {taskManagerImages.map((img, index) => (
+        {currencyConverterImages.map((img, index) => (
           <div
             key={index}
-            className="relative aspect-video h-full w-full overflow-hidden rounded-lg sm:rounded-xl mt-5"
+            className="relative w-full overflow-hidden rounded-lg sm:rounded-xl mt-5"
           >
             <Image
-              fill
-              alt={`Task Manager Web - ${img.replace(".png", "").replace(/-/g, " ")}`}
-              src={`/assets/images/projects/TaskManagerWeb/${img}`}
-              className="object-cover object-top"
-              sizes="(min-width: 768px) 50vw"
+              alt={`CurrencyConverter - ${img.replace(".png", "").replace(/-/g, " ")}`}
+              src={`/assets/images/projects/CurrencyConverter/${img}`}
+              width={1911}
+              height={953}
+              quality={100}
+              className="object-cover rounded-lg sm:rounded-xl"
             />
           </div>
         ))}

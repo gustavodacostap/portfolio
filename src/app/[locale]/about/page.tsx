@@ -11,6 +11,7 @@ export default function About() {
           <Image
             src="/assets/images/foto-gu.jpg"  
             fill
+            quality={100}
             alt="Gustavo's photo"
             className="object-cover"
           />

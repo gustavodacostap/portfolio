@@ -7,10 +7,10 @@ export default function TaskManagerWeb() {
   const p = useTranslations("projects");
 
   const taskManagerImages = [
-    "lista-principal.png",
-    "criar-nova-tarefa.png",
+    "lista-tarefas.png",
+    "adicionar-tarefa.png",
     "editar-tarefa.png",
-    "excluir-lista.png",
+    "excluir-tarefa.png",
   ];
 
   return (
@@ -58,16 +58,14 @@ export default function TaskManagerWeb() {
 
       <>
         {taskManagerImages.map((img, index) => (
-          <div
-            key={index}
-            className="relative aspect-video h-full w-full overflow-hidden rounded-lg sm:rounded-xl mt-5"
-          >
+          <div key={index} className="w-full mt-5 overflow-hidden rounded-lg sm:rounded-xl">
             <Image
-              fill
-              alt={`Task Manager Web - ${img.replace(".png", "").replace(/-/g, " ")}`}
               src={`/assets/images/projects/TaskManagerWeb/${img}`}
-              className="object-cover object-top"
-              sizes="(min-width: 768px) 50vw"
+              alt={`Task Manager Web - ${img.replace(".png", "").replace(/-/g, " ")}`}
+              width={1911}
+              height={953}
+              quality={100}
+              className="object-cover rounded-lg sm:rounded-xl"
             />
           </div>
         ))}
