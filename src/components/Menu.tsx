@@ -31,18 +31,26 @@ export default function Menu({ menuOpen, setMenuOpen }: Props) {
           <nav className="text-5xl/13 font-semibold text-bluishBlack dark:text-whitesmoke sm:text-6xl/16 md:text-7xl/20">
             {/* Link para cada seção */}
             <ol className="flex flex-col list-decimal marker:text-lg sm:marker:text-xl">
-              <Link href="/" onClick={() => setMenuOpen(false)}>
-                <li>{t("home")}</li>
-              </Link>
-              <Link href="/about" onClick={() => setMenuOpen(false)}>
-                <li>{t("about")}</li>
-              </Link>
-              <Link href="/projects" onClick={() => setMenuOpen(false)}>
-                <li>{t("projects")}</li>
-              </Link>
-              <Link href="/contact" onClick={() => setMenuOpen(false)}>
-                <li>{t("contact")}</li>
-              </Link>
+              <li>
+                <Link href="/" onClick={() => setMenuOpen(false)}>
+                  {t("home")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" onClick={() => setMenuOpen(false)}>
+                  {t("about")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/projects" onClick={() => setMenuOpen(false)}>
+                  {t("projects")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" onClick={() => setMenuOpen(false)}>
+                  {t("contact")}
+                </Link>
+              </li>
             </ol>
           </nav>
 

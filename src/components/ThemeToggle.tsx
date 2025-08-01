@@ -8,7 +8,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="rsounded-md text-bluishBlack hover:bg-gray-200 dark:hover:bg-gray-700 dark:text-whitesmoke"
+      className="text-bluishBlack dark:text-whitesmoke cursor-pointer"
     >
       {/* Muda o ícone de acordo com o tema, de sol para lua */}
       {theme === "dark" ? (

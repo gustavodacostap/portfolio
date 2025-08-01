@@ -13,6 +13,7 @@
     "framer-motion": "^12.23.9",
     "next": "15.4.4",
     "next-intl": "^4.0.2",
+    "nextjs-toploader": "^3.8.16",
     "postcss": "^8.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

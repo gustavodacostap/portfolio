@@ -9,7 +9,7 @@ export default function MenuToggleButton({ isOpen, onClick }: Props) {
   return (
     <button
       onClick={onClick}
-      className="rounded-md text-bluishBlack hover:bg-gray-200 dark:hover:bg-gray-700 dark:text-whitesmoke"
+      className="text-bluishBlack dark:text-whitesmoke cursor-pointer"
     >
       {/* Muda o ícone de fechar ou abrir dependendo do isOpen (se o menu está
       aberto ou não) */}

@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/contexts/ThemeContext";
 import React from "react";
 import ClientLayout from "@/components/ClientLayout";
 import { getMessages } from "next-intl/server";
+import NextTopLoader from "nextjs-toploader";
 
 type metadataProps = {
   params: { locale: string };
@@ -41,6 +42,16 @@ export default async function LocaleLayout({ children, params }: Props) {
         <link rel="icon" href="/assets/favicon/favicon.svg" sizes="32x32" />
       </head>
       <body className="bg-whitesmoke font-poppins text-bluishBlack dark:bg-bluishBlack dark:text-whitesmoke">
+        <NextTopLoader
+          color="darkOrange"
+          initialPosition={0.08}
+          crawlSpeed={200}
+          height={3}
+          crawl={true}
+          showSpinner={true}
+          easing="ease"
+          speed={200}
+        />
         {/* Provedor de tema que controla o modo claro e escuro */}
         <ThemeProvider>
           {/* Provedor de internacionalização que disponibiliza traduções para toda a aplicação */}

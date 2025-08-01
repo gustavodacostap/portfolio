@@ -11,12 +11,14 @@ export default function Projects() {
 
   const projectImages: Record<string, string> = {
     TaskManagerWeb: "/assets/images/projects/previews/task-manager.svg",
-    CurrencyConverter: "/assets/images/projects/previews/currency-converter.svg",
+    CurrencyConverter:
+      "/assets/images/projects/previews/currency-converter.svg",
     HolidayImporter: "/assets/images/projects/previews/holiday-importer.svg",
-    PasswordGenerator: "/assets/images/projects/previews/password-generator.svg",
+    PasswordGenerator:
+      "/assets/images/projects/previews/password-generator.svg",
   };
   return (
-    <main className="min-h-screen flex flex-col pt-20 px-5 sm:px-6 md:items-center md:pt-0 md:pl-12 md:pr-0 md:flex-row md:gap-10 lg:pl-18 xl:pl-50">
+    <main className="min-h-screen flex flex-col pt-20 px-5 mt-10 sm:px-6 md:items-center md-mt-0 md:pt-0 md:pl-12 md:pr-0 md:flex-row md:gap-10 lg:pl-18 xl:pl-50">
       <div className="flex w-full h-full">
         <div className="flex flex-col w-full md:w-1/2 justify-center">
           <div className="flex mb-4">

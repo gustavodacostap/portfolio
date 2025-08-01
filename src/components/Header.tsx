@@ -13,7 +13,7 @@ interface Props {
 
 export default function Header({ menuOpen, setMenuOpen }: Props) {
   return (
-    <header className="z-1 fixed top-0 w-full px-5 py-2 sm:px-6 sm:py-2 md:px-12 md:py-2 lg:px-18 lg:py-2 xl:px-20 xl:py-2 bg-whitesmoke dark:bg-bluishBlack">
+    <header className="z-1 fixed top-0 w-full px-5 py-3 sm:px-6 sm:py-2 md:px-12 md:py-2 lg:px-18 lg:py-2 xl:px-20 xl:py-2 bg-whitesmoke dark:bg-bluishBlack">
       <nav className="flex items-center justify-between">
         {/* Logo que tem o link para a Home */}
         <Link href="/">
@@ -23,7 +23,7 @@ export default function Header({ menuOpen, setMenuOpen }: Props) {
         </Link>
 
         {/* Botões de mudar idioma, mudar tema e abrir menu */}
-        <ul className="flex items-center gap-5">
+        <ul className="flex items-center gap-7">
           <LanguageSwitcher />
           <ThemeToggle />
           <MenuToggleButton

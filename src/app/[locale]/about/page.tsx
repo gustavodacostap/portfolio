@@ -9,7 +9,7 @@ export default function About() {
       <div className="md:flex h-[70vh]">
         <div className="aspect-[643/1069] w-75 max-w-full mx-auto relative rounded-2xl md:mx-0 md:rounded-l-none md:rounded-r-4xl lg:rounded-4xl overflow-hidden">
           <Image
-            src="/assets/images/foto-gu.jpg"  
+            src="/assets/images/foto-gu.jpg"
             fill
             quality={100}
             alt="Gustavo's photo"

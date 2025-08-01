@@ -26,7 +26,7 @@ export default function LanguageSwitcher() {
   return (
     <button
       onClick={handleLanguageChange}
-      className="text-base sm:text-lg font-semibold text-bluishBlack dark:text-whitesmoke"
+      className="text-base sm:text-lg font-semibold text-bluishBlack dark:text-whitesmoke cursor-pointer"
     >
       {locale.toUpperCase()}
     </button>
