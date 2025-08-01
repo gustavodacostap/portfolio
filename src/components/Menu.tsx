@@ -55,13 +55,14 @@ export default function Menu({ menuOpen, setMenuOpen }: Props) {
           </nav>
 
           {/* Link das redes sociais, com o ícone de setinha */}
-          <ul className="flex gap-5 font-inter text-xl [&>a>li]:flex [&>a>li]:items-center [&>a>li]:gap-2 sm:text-2xl">
-            <a
-              href="https://github.com/gustavodacostap"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <li>
+          <ul className="flex gap-5 font-inter text-xl [&>li>a]:flex [&>li>a]:items-center [&>li>a]:gap-2 sm:text-2xl">
+            <li>
+              <a
+                href="https://github.com/gustavodacostap"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -75,14 +76,15 @@ export default function Menu({ menuOpen, setMenuOpen }: Props) {
                   />
                 </svg>
                 github
-              </li>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/perfil-gustavo-da-costa/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <li>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/perfil-gustavo-da-costa/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -96,8 +98,8 @@ export default function Menu({ menuOpen, setMenuOpen }: Props) {
                   />
                 </svg>
                 linkedIn
-              </li>
-            </a>
+              </a>
+            </li>
           </ul>
         </div>
       </div>

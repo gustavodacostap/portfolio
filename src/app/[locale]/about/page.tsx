@@ -1,3 +1,5 @@
+"use client";
+
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
@@ -24,13 +26,17 @@ export default function About() {
           </div>
           <hr className="my-5 lines" />
           <p className="w-full max-w-190">{t("p")}</p>
-          <button className="btn-primary mt-5 mb-20">
-            <a
-              href="/assets/docs/Currículo Gustavo da Costa.pdf"
-              target="_blank"
-            >
-              {t("button")}
-            </a>
+          <button
+            type="button"
+            className="btn-primary mt-5 mb-20 cursor-pointer"
+            onClick={() =>
+              window.open(
+                "/assets/docs/Currículo Gustavo da Costa.pdf",
+                "_blank"
+              )
+            }
+          >
+            {t("button")}
           </button>
         </div>
       </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, Fragment } from "react";
+import { useState } from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
@@ -29,26 +29,29 @@ export default function Projects() {
 
           <hr className="lines mb-1" />
           <hr className="lines" />
-
-          <ul className="text-xl md:text-2xl font-medium [&>a>li]:flex [&>a>li]:items-center [&>a>li]:py-4">
+          <ul
+            className="
+              text-xl md:text-2xl font-medium
+              [&>li]:pt-4 [&>li]:pb-4
+              [&>li:not(:first-child)]:border-t-2 [&>li:not(:first-child)]:border-softWhite
+            "
+          >
             {[
               { slug: "TaskManagerWeb", label: t("taskManagerWebT") },
               { slug: "CurrencyConverter", label: t("currencyConverterT") },
               { slug: "HolidayImporter", label: t("holidayImporterT") },
               { slug: "PasswordGenerator", label: t("passwordGeneratorT") },
-            ].map((project, index, array) => (
-              <Fragment key={project.slug}>
-                <Link href={`/projects/${project.slug}`}>
-                  <li
-                    onMouseEnter={() => setHovered(project.slug)}
-                    onMouseLeave={() => setHovered(null)}
-                  >
-                    {project.label}
-                  </li>
+            ].map((project) => (
+              <li key={project.slug}>
+                <Link
+                  href={`/projects/${project.slug}`}
+                  className="block py-2"
+                  onMouseEnter={() => setHovered(project.slug)}
+                  onMouseLeave={() => setHovered(null)}
+                >
+                  {project.label}
                 </Link>
-                {/* Só adiciona a linha se não for o último item */}
-                {index < array.length - 1 && <hr className="lines" />}
-              </Fragment>
+              </li>
             ))}
           </ul>
         </div>

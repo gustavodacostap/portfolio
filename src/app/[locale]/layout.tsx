@@ -48,7 +48,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           crawlSpeed={200}
           height={3}
           crawl={true}
-          showSpinner={true}
+          showSpinner={false}
           easing="ease"
           speed={200}
         />
