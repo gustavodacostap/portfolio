@@ -1,24 +1,34 @@
 "use client";
 
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
-import Link from "next/link";
 
 export default function LanguageSwitcher() {
   const locale = useLocale();
   const pathname = usePathname();
+  const router = useRouter();
 
   const newLocale = locale === "pt" ? "en" : "pt";
 
-  // Substitui o idioma atual da página na URL pelo outro idioma
-  const newPath = pathname.replace(`/${locale}`, `/${newLocale}`);
+  // Remove o prefixo do locale atual do path
+  const pathWithoutLocale =
+    pathname.replace(new RegExp(`^/${locale}`), "") || "/";
+
+  const handleLanguageChange = () => {
+    // Atualiza o cookie que o middleware da next-intl usa
+    document.cookie = `NEXT_LOCALE=${newLocale}; path=/`;
+
+    // Redireciona para a nova URL com o locale alterado
+    router.push(`/${newLocale}${pathWithoutLocale}`);
+    router.refresh(); // força revalidação do lado do client
+  };
 
   return (
-    <Link
-      href={newPath}
+    <button
+      onClick={handleLanguageChange}
       className="text-base sm:text-lg font-semibold text-bluishBlack dark:text-whitesmoke"
     >
-      {newLocale.toUpperCase()}
-    </Link>
+      {locale.toUpperCase()}
+    </button>
   );
 }
