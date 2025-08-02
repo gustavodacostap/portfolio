@@ -16,7 +16,7 @@
   },
   "about": {
     "h2": "About",
-    "p": "Web developer in training, passionate about creating digital solutions with purpose and creativity. I study ADS and am specializing in technologies such as HTML, CSS, JavaScript, TypeScript, Bootstrap, Sass, React, Next.js, Node.js, MongoDB, and Sequelize. I dream of living abroad and am building my path with practical projects, constant learning, and a lot of dedication.",
+    "p": "Systems Analysis and Development student, currently working as an intern at CREA-SP. I’ve been applying my knowledge to real-world projects using technologies such as React, Next.js, TypeScript, Tailwind, Node.js, C#, and ASP.NET Core. I've developed full stack applications, RESTful APIs, and Excel-based automations, as well as integrations with databases and internal systems. My goal is to work in the tech industry, in Brazil or abroad, and I’m building this path with dedication, continuous learning, and a focus on delivering valuable solutions to real problems.",
     "button": "My resume"
   },
   "projects": {

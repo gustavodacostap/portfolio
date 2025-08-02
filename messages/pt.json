@@ -16,7 +16,7 @@
   },
   "about": {
     "h2": "Sobre",
-    "p": "Desenvolvedor web em formação apaixonado por criar soluções digitais com propósito e criatividade. Estudo ADS e venho me especializando em tecnologias como HTML, CSS, JavaScript, TypeScript, Bootstrap, Saas, React, Next.js, Node.js, MongoDB e Sequelize. Tenho o sonho de morar fora do Brasil e estou construindo meu caminho com projetos práticos, aprendizado constante e muita dedicação.",
+    "p": "Estudante de Análise e Desenvolvimento de Sistemas e estagiário no CREA-SP, venho aplicando meus conhecimentos em projetos práticos com tecnologias como React, Next.js, TypeScript, Tailwind, Node.js, C# e ASP.NET Core. Já desenvolvi aplicações full stack, APIs REST e automações com Excel, além de integrações com bancos de dados e sistemas internos. Tenho o objetivo de atuar no mercado de tecnologia, no Brasil ou no exterior, e venho construindo esse caminho com dedicação, aprendizado constante e foco em criar soluções que geram valor e resolvem problemas reais.",
     "button": "Meu currículo"
   },
   "projects": {
