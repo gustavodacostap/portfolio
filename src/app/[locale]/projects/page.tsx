@@ -32,8 +32,6 @@ export default function Projects() {
           <ul
             className="
               text-xl md:text-2xl font-medium
-              [&>li]:pt-4 [&>li]:pb-4
-              [&>li:not(:first-child)]:border-t-2 [&>li:not(:first-child)]:border-softWhite
             "
           >
             {[
@@ -41,11 +39,13 @@ export default function Projects() {
               { slug: "CurrencyConverter", label: t("currencyConverterT") },
               { slug: "HolidayImporter", label: t("holidayImporterT") },
               { slug: "PasswordGenerator", label: t("passwordGeneratorT") },
-            ].map((project) => (
+            ].map((project, index) => (
               <li key={project.slug}>
                 <Link
                   href={`/projects/${project.slug}`}
-                  className="block py-2"
+                  className={`block py-6 ${
+                    index !== 0 ? "border-t-2 border-softWhite" : ""
+                  }`}
                   onMouseEnter={() => setHovered(project.slug)}
                   onMouseLeave={() => setHovered(null)}
                 >
