@@ -1,7 +1,7 @@
 # 🌐 Meu Portfólio / My Portfolio
 
-Este é o meu portfólio pessoal desenvolvido com foco em design moderno, responsividade, animações suaves e suporte multilíngue (PT/EN).  
-This is my personal portfolio developed with a focus on modern design, responsiveness, smooth animations, and multilingual support (PT/EN).
+Este é o meu portfólio pessoal desenvolvido com foco em design moderno, responsividade e suporte multilíngue (PT/EN).  
+This is my personal portfolio developed with a focus on modern design, responsiveness and multilingual support (PT/EN).
 
 ![Demo do Portfólio / Portfolio Demo](./preview.gif)
 
@@ -13,7 +13,6 @@ This is my personal portfolio developed with a focus on modern design, responsiv
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [TailwindCSS](https://tailwindcss.com/)
-- [Framer Motion](https://www.framer.com/motion/)
 - [i18next](https://react.i18next.com/) (tradução / internationalization)
 
 ---
